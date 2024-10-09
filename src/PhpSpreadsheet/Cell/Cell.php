@@ -318,7 +318,7 @@ class Cell implements Stringable
         $this->updateInCollection();
         $cellCoordinate = $this->getCoordinate();
         self::updateIfCellIsTableHeader($this->getParent()?->getParent(), $this, $oldValue, $value);
-        $worksheet = $this->getWorksheet();
+        /*$worksheet = $this->getWorksheet();
         $spreadsheet = $worksheet->getParent();
         if (isset($spreadsheet)) {
             $originalSelected = $worksheet->getSelectedCells();
@@ -332,7 +332,7 @@ class Cell implements Stringable
             if ($activeSheetIndex >= 0) {
                 $spreadsheet->setActiveSheetIndex($activeSheetIndex);
             }
-        }
+        }*/
 
         return $this->getParent()?->get($cellCoordinate) ?? $this;
     }
