@@ -117,10 +117,6 @@
                                 <td class="phpdocumentor-cell">2</td>
                             </tr>
                                                                                                 <tr>
-                                <td class="phpdocumentor-cell"><a href="reports/markers.html#src/PhpSpreadsheet/Reader/Ods.php">src/PhpSpreadsheet/Reader/Ods.php</a></td>
-                                <td class="phpdocumentor-cell">1</td>
-                            </tr>
-                                                                                                <tr>
                                 <td class="phpdocumentor-cell"><a href="reports/markers.html#src/PhpSpreadsheet/Reader/Xls/Biff8.php">src/PhpSpreadsheet/Reader/Xls/Biff8.php</a></td>
                                 <td class="phpdocumentor-cell">1</td>
                             </tr>
@@ -137,6 +133,10 @@
                                 <td class="phpdocumentor-cell">1</td>
                             </tr>
                                                                                                 <tr>
+                                <td class="phpdocumentor-cell"><a href="reports/markers.html#src/PhpSpreadsheet/Reader/Xlsx/ConditionalStyles.php">src/PhpSpreadsheet/Reader/Xlsx/ConditionalStyles.php</a></td>
+                                <td class="phpdocumentor-cell">1</td>
+                            </tr>
+                                                                                                <tr>
                                 <td class="phpdocumentor-cell"><a href="reports/markers.html#src/PhpSpreadsheet/Reader/Xlsx.php">src/PhpSpreadsheet/Reader/Xlsx.php</a></td>
                                 <td class="phpdocumentor-cell">1</td>
                             </tr>
@@ -146,7 +146,7 @@
                             </tr>
                                                                                                 <tr>
                                 <td class="phpdocumentor-cell"><a href="reports/markers.html#src/PhpSpreadsheet/Writer/Html.php">src/PhpSpreadsheet/Writer/Html.php</a></td>
-                                <td class="phpdocumentor-cell">1</td>
+                                <td class="phpdocumentor-cell">2</td>
                             </tr>
                                                                                                 <tr>
                                 <td class="phpdocumentor-cell"><a href="reports/markers.html#src/PhpSpreadsheet/Writer/Ods/Cell/Style.php">src/PhpSpreadsheet/Writer/Ods/Cell/Style.php</a></td>
@@ -206,7 +206,7 @@
                     <tbody>
                                             <tr>
                             <td class="phpdocumentor-cell">TODO</td>
-                            <td class="phpdocumentor-cell">75</td>
+                            <td class="phpdocumentor-cell">76</td>
                             <td class="phpdocumentor-cell">How are we going to identify and handle a #SPILL! or a #CALC! error?</td>
                         </tr>
                                         </tbody>
@@ -224,7 +224,7 @@
                     <tbody>
                                             <tr>
                             <td class="phpdocumentor-cell">TODO</td>
-                            <td class="phpdocumentor-cell">60</td>
+                            <td class="phpdocumentor-cell">59</td>
                             <td class="phpdocumentor-cell">Sanitize Rich-Text string (max. character count is 32,767)</td>
                         </tr>
                                         </tbody>
@@ -242,31 +242,13 @@
                     <tbody>
                                             <tr>
                             <td class="phpdocumentor-cell">TODO</td>
-                            <td class="phpdocumentor-cell">295</td>
-                            <td class="phpdocumentor-cell">$this-&gt;dataArray[$row][$column] = &#039;RICH TEXT: &#039; . $cellContent;</td>
+                            <td class="phpdocumentor-cell">306</td>
+                            <td class="phpdocumentor-cell">$this-&gt;dataArray[$row][$column] = &#039;RICH TEXT: &#039; . StringHelper::convertToString($cellContent);</td>
                         </tr>
                                             <tr>
                             <td class="phpdocumentor-cell">TODO</td>
-                            <td class="phpdocumentor-cell">680</td>
+                            <td class="phpdocumentor-cell">707</td>
                             <td class="phpdocumentor-cell">} elseif ($child instanceof DOMElement) {</td>
-                        </tr>
-                                        </tbody>
-                </table>
-                            <a id="src/PhpSpreadsheet/Reader/Ods.php"></a>
-                <h3><abbr title="src/PhpSpreadsheet/Reader/Ods.php">Ods.php</abbr></h3>
-                <table>
-                    <thead>
-                    <tr>
-                        <th class="phpdocumentor-heading">Type</th>
-                        <th class="phpdocumentor-heading">Line</th>
-                        <th class="phpdocumentor-heading">Description</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                                            <tr>
-                            <td class="phpdocumentor-cell">TODO</td>
-                            <td class="phpdocumentor-cell">365</td>
-                            <td class="phpdocumentor-cell">:: Figure this out. This is only a partial implementation I guess.</td>
                         </tr>
                                         </tbody>
                 </table>
@@ -283,7 +265,7 @@
                     <tbody>
                                             <tr>
                             <td class="phpdocumentor-cell">TODO</td>
-                            <td class="phpdocumentor-cell">294</td>
+                            <td class="phpdocumentor-cell">300</td>
                             <td class="phpdocumentor-cell">if cell range is just a single cell, should this funciton</td>
                         </tr>
                                         </tbody>
@@ -301,22 +283,22 @@
                     <tbody>
                                             <tr>
                             <td class="phpdocumentor-cell">TODO</td>
-                            <td class="phpdocumentor-cell">487</td>
+                            <td class="phpdocumentor-cell">492</td>
                             <td class="phpdocumentor-cell">Why is there no BSE Index? Is this a new Office Version? Password protected field?</td>
                         </tr>
                                             <tr>
                             <td class="phpdocumentor-cell">FIXME</td>
-                            <td class="phpdocumentor-cell">582</td>
+                            <td class="phpdocumentor-cell">602</td>
                             <td class="phpdocumentor-cell">what if sheetname contains comma?</td>
                         </tr>
                                             <tr>
                             <td class="phpdocumentor-cell">FIXME</td>
-                            <td class="phpdocumentor-cell">614</td>
+                            <td class="phpdocumentor-cell">634</td>
                             <td class="phpdocumentor-cell">what if sheetname contains comma?</td>
                         </tr>
                                             <tr>
                             <td class="phpdocumentor-cell">TODO</td>
-                            <td class="phpdocumentor-cell">663</td>
+                            <td class="phpdocumentor-cell">684</td>
                             <td class="phpdocumentor-cell">Provide support for named values</td>
                         </tr>
                                         </tbody>
@@ -334,17 +316,17 @@
                     <tbody>
                                             <tr>
                             <td class="phpdocumentor-cell">FIXME</td>
-                            <td class="phpdocumentor-cell">3324</td>
+                            <td class="phpdocumentor-cell">3415</td>
                             <td class="phpdocumentor-cell">set $firstVisibleRow and $firstVisibleColumn</td>
                         </tr>
                                             <tr>
                             <td class="phpdocumentor-cell">TODO</td>
-                            <td class="phpdocumentor-cell">3754</td>
+                            <td class="phpdocumentor-cell">3847</td>
                             <td class="phpdocumentor-cell">Investigate structure for .xls SHEETLAYOUT record as saved by MS Office Excel 2007</td>
                         </tr>
                                             <tr>
                             <td class="phpdocumentor-cell">TODO</td>
-                            <td class="phpdocumentor-cell">4682</td>
+                            <td class="phpdocumentor-cell">4790</td>
                             <td class="phpdocumentor-cell">external sheet support</td>
                         </tr>
                                         </tbody>
@@ -362,8 +344,26 @@
                     <tbody>
                                             <tr>
                             <td class="phpdocumentor-cell">TODO</td>
-                            <td class="phpdocumentor-cell">1509</td>
+                            <td class="phpdocumentor-cell">1530</td>
                             <td class="phpdocumentor-cell">parse title elements</td>
+                        </tr>
+                                        </tbody>
+                </table>
+                            <a id="src/PhpSpreadsheet/Reader/Xlsx/ConditionalStyles.php"></a>
+                <h3><abbr title="src/PhpSpreadsheet/Reader/Xlsx/ConditionalStyles.php">ConditionalStyles.php</abbr></h3>
+                <table>
+                    <thead>
+                    <tr>
+                        <th class="phpdocumentor-heading">Type</th>
+                        <th class="phpdocumentor-heading">Line</th>
+                        <th class="phpdocumentor-heading">Description</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                            <tr>
+                            <td class="phpdocumentor-cell">TODO</td>
+                            <td class="phpdocumentor-cell">385</td>
+                            <td class="phpdocumentor-cell">The cfIcon element is not implemented yet.</td>
                         </tr>
                                         </tbody>
                 </table>
@@ -380,7 +380,7 @@
                     <tbody>
                                             <tr>
                             <td class="phpdocumentor-cell">TODO</td>
-                            <td class="phpdocumentor-cell">1359</td>
+                            <td class="phpdocumentor-cell">1412</td>
                             <td class="phpdocumentor-cell">Autoshapes from twoCellAnchors!</td>
                         </tr>
                                         </tbody>
@@ -398,7 +398,7 @@
                     <tbody>
                                             <tr>
                             <td class="phpdocumentor-cell">FIXME</td>
-                            <td class="phpdocumentor-cell">157</td>
+                            <td class="phpdocumentor-cell">158</td>
                             <td class="phpdocumentor-cell">missing FIXME</td>
                         </tr>
                                         </tbody>
@@ -416,7 +416,12 @@
                     <tbody>
                                             <tr>
                             <td class="phpdocumentor-cell">TODO</td>
-                            <td class="phpdocumentor-cell">1840</td>
+                            <td class="phpdocumentor-cell">1688</td>
+                            <td class="phpdocumentor-cell">the style gotten from the merger overrides everything</td>
+                        </tr>
+                                            <tr>
+                            <td class="phpdocumentor-cell">TODO</td>
+                            <td class="phpdocumentor-cell">2072</td>
                             <td class="phpdocumentor-cell">Same for columns</td>
                         </tr>
                                         </tbody>
@@ -452,32 +457,32 @@
                     <tbody>
                                             <tr>
                             <td class="phpdocumentor-cell">TODO</td>
-                            <td class="phpdocumentor-cell">560</td>
+                            <td class="phpdocumentor-cell">572</td>
                             <td class="phpdocumentor-cell">use real error codes</td>
                         </tr>
                                             <tr>
                             <td class="phpdocumentor-cell">TODO</td>
-                            <td class="phpdocumentor-cell">636</td>
+                            <td class="phpdocumentor-cell">648</td>
                             <td class="phpdocumentor-cell">possible class value 0,1,2 check Formula.pm</td>
                         </tr>
                                             <tr>
                             <td class="phpdocumentor-cell">TODO</td>
-                            <td class="phpdocumentor-cell">641</td>
+                            <td class="phpdocumentor-cell">653</td>
                             <td class="phpdocumentor-cell">use real error codes</td>
                         </tr>
                                             <tr>
                             <td class="phpdocumentor-cell">TODO</td>
-                            <td class="phpdocumentor-cell">656</td>
+                            <td class="phpdocumentor-cell">668</td>
                             <td class="phpdocumentor-cell">use real error codes</td>
                         </tr>
                                             <tr>
                             <td class="phpdocumentor-cell">FIXME</td>
-                            <td class="phpdocumentor-cell">934</td>
+                            <td class="phpdocumentor-cell">946</td>
                             <td class="phpdocumentor-cell">maximum possible value for Excel 5 (change this!!!)</td>
                         </tr>
                                             <tr>
                             <td class="phpdocumentor-cell">FIXME</td>
-                            <td class="phpdocumentor-cell">936</td>
+                            <td class="phpdocumentor-cell">948</td>
                             <td class="phpdocumentor-cell">this changes for BIFF8</td>
                         </tr>
                                         </tbody>
@@ -495,7 +500,7 @@
                     <tbody>
                                             <tr>
                             <td class="phpdocumentor-cell">FIXME</td>
-                            <td class="phpdocumentor-cell">872</td>
+                            <td class="phpdocumentor-cell">891</td>
                             <td class="phpdocumentor-cell">only using internal SUPBOOK record</td>
                         </tr>
                                         </tbody>
@@ -513,7 +518,7 @@
                     <tbody>
                                             <tr>
                             <td class="phpdocumentor-cell">FIXME</td>
-                            <td class="phpdocumentor-cell">1251</td>
+                            <td class="phpdocumentor-cell">1273</td>
                             <td class="phpdocumentor-cell">!!!</td>
                         </tr>
                                         </tbody>
@@ -531,7 +536,7 @@
                     <tbody>
                                             <tr>
                             <td class="phpdocumentor-cell">TODO</td>
-                            <td class="phpdocumentor-cell">974</td>
+                            <td class="phpdocumentor-cell">973</td>
                             <td class="phpdocumentor-cell">output title elements</td>
                         </tr>
                                         </tbody>
